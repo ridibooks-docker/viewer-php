@@ -18,6 +18,7 @@ RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     php7.2-zip \
     php7.2-xml \
     php7.2-xdebug \
+    php7.2-gmp \
     apache2 \
     libapache2-mod-php7.2 \
     git \
