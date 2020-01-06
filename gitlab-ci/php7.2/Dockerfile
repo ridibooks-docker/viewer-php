@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -yqq \
     python3-pip \
     unzip \
     zlib1g-dev \
+    php7.2-mbstring \
+    php7.2-gmp \
     gnupg
 
 # Install composer
