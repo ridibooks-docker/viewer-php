@@ -7,17 +7,13 @@ RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     libmcrypt-dev \
     curl \
     apt-utils \
+    gnupg \
     software-properties-common \
     gettext-base \
-    python3 \
     python3-pip \
     python3-setuptools \
     python3-wheel \
-    git \
-    libmcrypt-dev \
-    python3-pip \
-    unzip \
-    zlib1g-dev \
+    jq \
     php7.2 \
     php7.2-cli \
     php7.2-curl \
@@ -28,9 +24,15 @@ RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     php7.2-xml \
     php7.2-xdebug \
     php7.2-gmp \
+    apache2 \
+    libapache2-mod-php7.2 \
+    git \
+    ssh \
+    libmcrypt-dev \
+    unzip \
+    zlib1g-dev \
     doctrine \
-    php-mysql \
-    gnupg
+    php7.2-apcu
 
 # Install composer
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
