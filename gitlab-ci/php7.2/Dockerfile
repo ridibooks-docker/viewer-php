@@ -28,6 +28,7 @@ RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     php7.2-xml \
     php7.2-xdebug \
     php7.2-gmp \
+    doctrine \
     php-mysql \
     gnupg
 
