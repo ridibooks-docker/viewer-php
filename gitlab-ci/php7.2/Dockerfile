@@ -5,6 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     software-properties-common \
+    make \
     gettext-base \
     python3-pip \
     python3-setuptools \
