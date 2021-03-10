@@ -24,6 +24,8 @@ RUN apt-get update --fix-missing && apt-get install --no-install-recommends -y \
     git \
     ssh
 
+RUN wget https://github.com/DataDog/dd-trace-php/releases/download/0.51.0/datadog-php-tracer_0.51.0_amd64.deb
+RUN dpkg -i datadog-php-tracer_0.51.0_amd64.deb
 
 # Install composer
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
